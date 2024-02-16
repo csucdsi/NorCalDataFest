@@ -1,0 +1,158 @@
+baseurl: "/"
+title: DataFest 2024
+theme: hugo-universal-theme
+languageCode: en-us
+defaultContentLanguage: en
+disqusShortname: devcows
+googleAnalytics: 'UA-122708636-2'
+summaryLength: 70
+paginate: 10
+pluralizelisttitles: no
+
+menu:
+  main:
+    - identifier: menu.home
+      name: Home
+      url: /
+      weight: 1
+    - identifier: menu.about
+      name: 'About'
+      url: /about/
+      weight: 1
+    - identifier: menu.register
+      name: 'Register'
+      url: /register/
+      weight: 2
+    - identifier: menu.schedule
+      name: 'Schedule'
+      url: /schedule/
+      weight: 4
+    - identifier: menu.support
+      name: Supporting DataFest
+      url: /Sponsors/
+      weight: 5
+    - name: Fundraising
+      parent: menu.support
+      url: fundraising
+      weight: 1
+    - identifier: menu.faq
+      name: FAQ
+      url: /faq/
+      weight: 6
+    - identifier: contact
+      name: Contact
+      url: /contact/
+      weight: 7
+  # topbar:
+  #   - name: Phone
+  #     pre: <i class='fas fa-2x fa-phone'></i>
+  #     url: tel:+12 34 567 89 01
+  #     weight: 1
+  #   - name: GitHub
+  #     pre: <i class='fab fa-2x fa-github'></i>
+  #     url: https://github.com/devcows/hugo-universal-theme
+  #     weight: 2
+  #   - name: Facebook
+  #     pre: <i class='fab fa-2x fa-facebook'></i>
+  #     url: http://facebook.com
+  #     weight: 3
+  #   - name: Twitter
+  #     pre: <i class='fab fa-2x fa-twitter'></i>
+  #     url: http://twitter.com
+  #     weight: 4
+  #   - name: Email
+  #     pre: <i class='fas fa-2x fa-envelope'></i>
+  #     url: mailto:datascience@csuchico.edu
+  #     weight: 5
+params:
+  about_us: "<p>Data Fest is organized by the Data Science Initiative at Chico State. Learn more at <a href='http://datascience.csuchico.edu'>http://datascience.csuchico.edu</a></p>"
+  author: Robin Donatello
+  carouselCustomers:
+    auto_play: no
+    items: 6
+    pagination_speed: 1000
+    slide_speed: 2000
+  carouselHomepage:
+    auto_play: yes
+    enable: yes
+    pagination_speed: 1000
+    slide_speed: 2000
+  carouselTestimonials:
+    auto_play: no
+    items: 4
+    pagination_speed: 1000
+    slide_speed: 2000
+  clients:
+    enable: yes
+    subtitle: ''
+    title: Our Clients
+  contact_form_ajax: no
+  contact_url: /contact
+  copyright: Copyright (c) 2018 - 2024, CSUC DSI; all rights reserved.
+  date_format: January 2, 2006
+  default_sharing_image: img/sharing-default.png
+  defaultDescription: NorCal ASA DataFest
+  defaultKeywords:
+    - data
+    - hugo
+    - go
+  disabled_logo: no
+  dropdown_mouse_over: no
+  enableGoogleMaps: yes
+  enableRecaptchaInContactForm: no
+  facebook_site: ''
+  features:
+    cols: 3
+    enable: yes
+  footer:
+    recent_posts:
+      enable: yes
+  formspree_action: https://formspree.io/sample/of/endpoint
+  googleMapsApiKey: AIzaSyCFhtWLJcE30xOAjcbSFi-0fnoVmQZPb1Y
+  googleRecaptchaKey: site_key_for_google_recaptcha
+  latitude: '39.7285'
+  logo: img/logo.png
+  logo_small: img/logo-small.png
+  logo_text: Universal
+  longitude: '121.8375'
+  mainSections: blog
+  recent_posts:
+    enable: yes
+    hide_summary: no
+    subtitle: Pellentesque habitant morbi tristique senectus et netus et malesuada
+      fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget,
+      tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean
+      ultricies mi vitae est. Mauris placerat eleifend leo.
+    title: From our blog
+  see_more:
+    enable: yes
+    icon: far fa-file-alt
+    link_text: Check other homepages
+    link_url: '#'
+    subtitle: We have prepared for you more than 40 different HTML pages, including
+      5 variations of homepage.
+    title: Do you want to see more?
+  style: default
+  testimonials:
+    enable: yes
+    subtitle: Hear what prior participants had to say about this event.
+    title: Testimonials
+  topbar:
+    enable: no
+    text: "<p class=\"hidden-sm hidden-xs\">Contact us on +420 777 555 333 or hello@universal.com.</p>\r\n
+      \     <p class=\"hidden-md hidden-lg\"><a href=\"tel:+420 777 555 333\" data-animate-hover=\"pulse\"><i
+      class=\"fas fa-phone\"></i></a>\r\n      <a href=\"mailto:hello@universal.com\"
+      data-animate-hover=\"pulse\"><i class=\"fas fa-envelope\"></i></a>\r\n      </p>\r\n
+      \     "
+  twitter_site: GoHugoIO
+  viewMorePostLink: /blog/
+  widgets:
+    categories: yes
+    search: yes
+    tags: yes
+permalinks:
+  blog: /blog/:year/:month/:day/:filename/
+taxonomies:
+  author: authors
+  category: categories
+  tag: tags
